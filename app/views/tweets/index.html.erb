@@ -15,6 +15,15 @@
   <%= link_to "新規登録", new_user_registration_path %>
 <% end %>
 
+<div>
+  <%= link_to "メンバー", members_path %>
+</div>
+
+<div>
+  <%= link_to "About 日向坂46" %>
+</div>
+
+
 
 <% @tweets.each do |tweet| %>
   <div class="">
@@ -27,6 +36,7 @@
     </div class=''>
 
     <div class=''>
+      <%= "出演：" %>
       <%= tweet.member.name %>
     </div class=''>
 

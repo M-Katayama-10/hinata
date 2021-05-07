@@ -1,0 +1,36 @@
+
+<div class="">
+  <h4 class=''>
+    <%= @tweet.days %>
+  </h4>
+
+  <div class=''>
+    <%= @tweet.member.name %>
+  </div class=''>
+
+  <div class=''>
+    <%= @tweet.program %>
+  </div class=''>
+
+  <div class=''>
+  <% if @tweet.time.present? %>
+    <%= @tweet.time %>〜<%= @tweet.endtime %>
+  <% end %>
+  </div class=''>
+
+  <div class=''>
+    <%= @tweet.supplement %>
+  </div class=''>
+</div>
+
+<% if user_signed_in? %>
+  <%= link_to "編集する", edit_tweet_path(@tweet.id) %>
+<% end %>
+
+<% if user_signed_in? && current_user.id == @tweet.user_id %>
+  <%= link_to "削除する", tweet_path(@tweet.id), method: :delete %>
+<% end %>
+
+<div>
+  <%= link_to 'もどる', root_path, class:"" %>
+</div>

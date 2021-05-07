@@ -1,30 +1,39 @@
-<h1>トップページ</h1>
+<h1>日向坂46出演情報</h1>
 <% if user_signed_in? %>
-   <%= link_to current_user.name, edit_user_path(current_user), class: "" %>
-   <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "" %>
-   <%= link_to '投稿する', new_tweet_path, class: '' %>
+  <div>
+    <%= "ユーザー名"%>
+    <%= link_to current_user.name, edit_user_path(current_user), class: "" %>
+  </div>
+  <div>
+    <%= link_to 'ログアウトする', destroy_user_session_path, method: :delete, class: "" %>
+  </div>
+  <div>
+    <%= link_to '投稿する', new_tweet_path, class: '' %>
+  </div>
 <% else %>
-   <%= link_to "ログイン", new_user_session_path %>
-   <%= link_to "新規登録", new_user_registration_path %>
+  <%= link_to "ログイン", new_user_session_path %>
+  <%= link_to "新規登録", new_user_registration_path %>
 <% end %>
 
 
 <% @tweets.each do |tweet| %>
   <div class="">
-    <h3 class=''>
-      <%= tweet.time %>
-    </h3>
-
-    <div class=''>
-      <%= tweet.member.name %>
-    </div class=''>
+    <h4 class=''>
+      <%= link_to tweet.days, tweet_path(tweet.id) %>
+    </h4>
 
     <div class=''>
       <%= tweet.program %>
     </div class=''>
 
     <div class=''>
-      <%= tweet.time %>
+      <%= tweet.member.name %>
+    </div class=''>
+
+    <div class=''>
+    <% if tweet.time.present? %>
+      <%= tweet.time %>〜<%= tweet.endtime %>
+    <% end %>
     </div class=''>
 
     <div class=''>

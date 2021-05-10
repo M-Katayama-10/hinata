@@ -1,0 +1,22 @@
+
+.header_main {
+  display: flex;
+  justify-content: left;
+}
+
+.search {
+  margin-right: 50px;
+}
+
+.other {
+  display: flex;
+  justify-content: space-around;
+}
+
+.other_content {
+  margin-right: 50px;
+}
+
+.search_box {
+  width: 200px;
+}

@@ -1,0 +1,20 @@
+<%= render "shared/header" %>
+<div class="">
+  <h2 class="">
+    <%= "#{@user.name}さんの情報"%>
+  </h2>
+  <div class="">
+    <%= "ユーザー名：" %>
+    <%= @user.name %>
+  </div>
+    <div class="">
+    <%= "推しメン：" %>
+    <%= @user.member %>
+  </div>
+  <div class="">
+    <%= "おひさま歴：" %>
+    <%= @user.history %>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

@@ -1,0 +1,39 @@
+<div class = "header_main">
+  <div class ="search">
+    <%= form_with(url: search_tweets_path, local: true, method: :get, class: "") do |form| %>
+      <%= form.text_field :keyword, placeholder: "例)ひな会い,BLT,ひなたひ...", class: "search_box" %>
+      <%= form.submit "検索", class: "" %>
+    <% end %>
+  </div>
+
+  <div class = "other">
+    <% if user_signed_in? %>
+      <div class = "other_content">
+        <%= "ユーザー名："%>
+        <%= link_to current_user.name, edit_user_path(current_user), class: "" %>
+      </div>
+      <div class = "other_content">
+        <%= link_to 'ログアウトする', destroy_user_session_path, method: :delete, class: "" %>
+      </div>
+      <div class = "other_content">
+        <%= link_to '投稿する', new_tweet_path, class: '' %>
+      </div>
+    <% else %>
+      <div class = "other_content">
+        <%= link_to "ログイン", new_user_session_path %>
+      </div>
+      <div class = "other_content">
+        <%= link_to "新規登録", new_user_registration_path %>
+      </div>
+    <% end %>
+
+    <div class = "other_content">
+      <%= link_to "メンバー", members_path %>
+    </div>
+
+    <div class = "other_content">
+    <%= link_to "日向坂46", groups_path %>
+  </div>
+
+  </div>
+</div>

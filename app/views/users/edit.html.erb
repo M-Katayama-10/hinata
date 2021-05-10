@@ -1,9 +1,8 @@
+<%= render "shared/header" %>
 <div class='' id=''>
   <div class=''>
     <div class=''>
-      <h5>アカウントの編集</h5>
-      <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: ''%>
-      <%= link_to "戻る", root_path, class: ''%>
+      <h2>アカウントの編集</h2>
     </div>
     <div class=''>
       <%= form_with model: current_user, local: true do |f|%>
@@ -46,3 +45,5 @@
     </div>
   </div>
 </div>
+
+<%= render "shared/footer" %>

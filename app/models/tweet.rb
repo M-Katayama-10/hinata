@@ -7,7 +7,13 @@ class Tweet < ApplicationRecord
 
   belongs_to :user
 
-
+  def self.search(search)
+    if search != ""
+      Tweet.where('program LIKE(?)', "%#{search}%")
+    else
+      Tweet.all
+    end
+  end
 
   extend ActiveHash::Associations::ActiveRecordExtensions
 

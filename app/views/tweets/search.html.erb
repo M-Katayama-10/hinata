@@ -1,0 +1,35 @@
+<%= form_with(url: search_tweets_path, local: true, method: :get, class: "") do |form| %>
+  <%= form.text_field :keyword, placeholder: "出演媒体を検索する", class: "" %>
+  <%= form.submit "検索", class: "" %>
+<% end %>
+
+<div>
+  <%= link_to 'トップページにもどる', root_path, class:"" %>
+</div>
+
+<% @tweets.each do |tweet| %>
+  <div class="">
+    <h4 class=''>
+      <%= link_to tweet.days, tweet_path(tweet.id) %>
+    </h4>
+
+    <div class=''>
+      <%= tweet.program %>
+    </div class=''>
+
+    <div class=''>
+      <%= "出演：" %>
+      <%= tweet.member.name %>
+    </div class=''>
+
+    <div class=''>
+    <% if tweet.time.present? %>
+      <%= tweet.time %>〜<%= tweet.endtime %>
+    <% end %>
+    </div class=''>
+
+    <div class=''>
+      <%= tweet.supplement %>
+    </div class=''>
+  </div>
+<% end %>

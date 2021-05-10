@@ -1,0 +1,30 @@
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index_tweet {
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+.tweet_text {
+  margin-right: 50px;
+}
+
+.days {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.top_page {
+  overflow: scroll;
+}
+
+.week {
+  margin-left: 30px;
+}

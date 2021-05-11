@@ -1,5 +1,10 @@
 
 .name {
   font-size: 22px;
-  margin-right: 40px;
+  margin-right: 70px;
+}
+
+.side_bar_all {
+  text-align: center;
+  background-color: coral;
 }

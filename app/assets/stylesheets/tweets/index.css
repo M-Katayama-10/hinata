@@ -1,3 +1,20 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.edit_main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.show_main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .main {
   display: flex;
@@ -8,10 +25,12 @@
   display: flex;
   justify-content: left;
   padding: 20px;
+  color:black;
 }
 
 .tweet_text {
-  margin-right: 50px;
+  margin-right: 100px;
+  color:black;
 }
 
 .days {
@@ -19,12 +38,106 @@
   justify-content: left;
   margin-top: 40px;
   margin-left: 20px;
+  color:black;
 }
 
-.top_page {
-  overflow: scroll;
-}
 
 .week {
   margin-left: 30px;
+}
+
+.main_title {
+  color:black;
+}
+
+.new_main {
+  display: flex;
+  margin-top: 65px;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.new_days {
+  margin-bottom: 20px;
+}
+
+.new_week {
+  margin-bottom: 20px;
+}
+
+.new_member {
+  margin-bottom: 20px;
+}
+
+.new_program {
+  margin-bottom: 20px;
+}
+
+.new_time {
+  margin-bottom: 20px;
+}
+
+.new_supplement {
+  margin-bottom: 20px;
+}
+
+.edit_btn {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.destroy_btn {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.edit_destroy {
+  display: flex;
+  justify-content: left;
+}
+
+.edit_days {
+  margin-top: 70px;
+}
+
+.edit_week {
+  margin-top: 20px;
+}
+
+.edit_member {
+  margin-top: 20px;
+}
+
+.edit_program {
+  margin-top: 20px;
+}
+
+.edit_time {
+  margin-top: 20px;
+}
+
+.edit_supplement {
+  margin-top: 20px;
+}
+
+.edit_save {
+  margin-top: 35px;
+}
+
+.edit_back {
+  margin-top: 35px;
+}
+
+.edit_form {
+  display: flex;
+  justify-content: center;
+}
+
+
+.one_tweet {
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
 }

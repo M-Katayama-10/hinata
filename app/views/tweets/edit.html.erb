@@ -1,36 +1,46 @@
-<%= render "shared/header" %>
+<div class ="edit_main">
+  <%= render "shared/header" %>
+  <div class ="edit_form">
+    <%= form_with model: @tweet, local: true do |f|%>
 
-<%= form_with model: @tweet, local: true do |f|%>
+      <div class="edit_days">
+        <%= f.label :days, "日付" %><br />
+        <%= f.date_field :days %>
+      </div>
 
-  <div class="">
-    <%= f.label :days, "日付" %><br />
-    <%= f.date_field :days %>
+      <div class="edit_week">
+        <div class="">曜日</div>
+        <%= f.select :dayofweek_id,[["月曜日",1],["火曜日",2],["水曜日",3],["木曜日",4],["金曜日",5],["土曜日",6],["日曜日",7]] %>
+      </div>
+
+      <div class="edit_member">
+        <div class="">メンバー名</div>
+        <%= f.collection_select(:member_id, Member.all, :id, :name, {}, {class:"select-box", id:""}) %>
+      </div>
+
+      <div class="edit_program">
+        <%= f.label :program, "番組名・雑誌名・媒体名" %><br />
+        <%= f.text_field :program, class: :form__text, id:"" %>
+      </div>
+
+      <div class="edit_time">
+        <%= f.label :time, "時間帯" %><br />
+        <%= f.time_field :time %>〜<%= f.time_field :endtime %>
+      </div>
+
+      <div class="edit_supplement">
+        <%= f.label :supplement, "補足" %><br />
+        <%= f.text_field :supplement, class: :form__text, id:"" %>
+      </div>
+
+      <div class="edit_save">
+        <%= f.submit "保存する", class: :form__btn  %>
+      </div>
+      <div class ="edit_back">
+        <%= link_to '詳細ページにもどる', tweet_path(@tweet.id), class:"" %>
+      </div>
+    <% end %>
   </div>
 
-  <div class="">
-    <div class="">メンバー名</div>
-    <%= f.collection_select(:member_id, Member.all, :id, :name, {}, {class:"select-box", id:""}) %>
-  </div>
-
-  <div class="">
-    <%= f.label :program, "番組名・雑誌名・媒体名" %><br />
-    <%= f.text_field :program, class: :form__text, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.label :time, "時間帯" %><br />
-    <%= f.time_field :time %>〜<%= f.time_field :endtime %>
-  </div>
-
-  <div class="">
-    <%= f.label :supplement, "補足" %><br />
-    <%= f.text_area :supplement, class: :form__text, id:"" %>
-  </div>
-
-  <div class="">
-    <%= f.submit "保存する", class: :form__btn  %>
-    <%= link_to '詳細ページにもどる', tweet_path(@tweet.id), class:"" %>
-  </div>
-<% end %>
-
-<%= render "shared/footer" %>
+  <%= render "shared/footer" %>
+</div>

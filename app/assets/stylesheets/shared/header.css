@@ -1,22 +1,28 @@
 
 .header_main {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
+  background-color: deepskyblue;
 }
 
 .search {
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .other {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .other_content {
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 30px;
 }
 
 .search_box {
   width: 200px;
+  height: 25px;
 }

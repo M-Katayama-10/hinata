@@ -58,6 +58,7 @@
 
 .profile_name {
   font-size: 20px;
+  color: black;
 }
 
 a {
@@ -72,4 +73,6 @@ a {
 
 .member_name {
   flex-direction: column;
+  color: black;
 }
+

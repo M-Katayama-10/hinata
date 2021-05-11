@@ -1,22 +1,22 @@
-<div class="">
+<div class="session_new">
+  <%= render "shared/header" %>
   <div class="">
     <div class="">
       <h2 class="">ユーザーログイン</h2>
         <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
-        <div class="">
+        <div class="session_content">
           <%= f.label :email, "" %><br />
           <%= f.email_field :email, id:"", autofocus: true, autocomplete: "email" %>
         </div>
 
-        <div class="">
+        <div class="session_content">
           <%= f.label :password, "パスワード（6文字以上）" %><br />
           <%= f.password_field :password, id:"", autocomplete: "current-password" %>
         </div>
 
-        <div class="">
+        <div class="session_content">
           <%= f.submit "ログイン", class: :form__btn %>
-          <%= link_to 'もどる', root_path, class:"" %>
         </div>
       <% end %>
     </div>

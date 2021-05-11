@@ -212,3 +212,57 @@
   min-height: 100vh;
   background-color:rgba(0,255,255,0.05);
 }
+
+.member_image {
+  margin-top: 80px;
+  margin-right: 60px;
+  padding-right: 30px;
+}
+
+
+.member_name {
+  margin-top: 80px;
+  margin-left: 60px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.kanji {
+  margin-bottom: 20px;
+}
+
+.hiragana {
+  margin-bottom: 20px;
+}
+
+.generation {
+  margin-bottom: 20px;
+}
+
+.age {
+  margin-bottom: 20px;
+}
+
+.birthday {
+  margin-bottom: 20px;
+}
+
+.registration_new {
+  background-color:rgba(0,255,255,0.05);
+  height: 100vh;
+  text-align: center;
+}
+
+.registration_new_content {
+  margin-bottom: 30px;
+}
+
+.session_new {
+  background-color: rgba(0,255,255,0.05);
+  height: 100vh;
+  text-align: center;
+}
+
+.session_content {
+  margin-bottom: 40px;
+}

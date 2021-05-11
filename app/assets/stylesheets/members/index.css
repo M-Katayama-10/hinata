@@ -132,3 +132,8 @@ a {
   overflow: scroll;
   height: 450px;
 }
+
+.profile_under {
+  height: calc(100vh - 485px);
+  overflow: scroll;
+}

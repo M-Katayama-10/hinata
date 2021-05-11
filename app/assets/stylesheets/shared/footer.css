@@ -1,8 +1,10 @@
 .footer {
-  background-color: deepskyblue;
   width: 100vw;
   margin-top: auto;
   display: flex;
-  align-items: center;
-  height: 60px;
+  height: 65px;
+  background: rgba(0,255,255,0.4);
+  border-top: solid 6px deepskyblue;
+  border-bottom: solid 6px deepskyblue;
 }
+

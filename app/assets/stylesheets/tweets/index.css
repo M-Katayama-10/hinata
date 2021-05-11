@@ -1,24 +1,27 @@
 .all {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .edit_main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
 }
 
 .show_main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
 }
 
 .main {
   display: flex;
   justify-content: space-between;
+  background-color:rgba(0,255,255,0.05);
+  height: 700px;
 }
 
 .index_tweet {
@@ -36,7 +39,7 @@
 .days {
   display: flex;
   justify-content: left;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 20px;
   color:black;
 }
@@ -52,9 +55,10 @@
 
 .new_main {
   display: flex;
-  margin-top: 65px;
   justify-content: center;
+  padding-top: 65px;
   min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
 }
 
 .new_days {
@@ -135,9 +139,76 @@
 
 
 .one_tweet {
-  font-weight: bold;
-  color: #6091d3;/*文字色*/
-  background: #FFF;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background:rgba(255,204,204,0.2);
+  border-top: solid 5px #FFCC99;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  width: 1150px;
+  
+}
+
+.edit_user_main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);;
+}
+
+.show_user_main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
+}
+
+.edit_form {
+  display: flex;
+  justify-content: center;
+}
+
+.show_content {
+  display: flex;
+  justify-content: center;
+}
+
+.shows {
+  flex-direction: column;
+}
+
+.top_page {
+  width: 1182px;
+  height: 700px;
+  margin-bottom: 0px;
+  overflow: scroll;
+}
+
+.one_tweet_second {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background:rgba(255,204,204,0.2);
+  border-top: solid 5px #FFCC99;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  width: 100%;
+}
+
+.edit_content {
+  margin-bottom: 30px;
+}
+
+.user_show {
+  margin-bottom: 30px;
+}
+
+.user_show_name {
+  margin-top: 100px;
+}
+
+.search_all {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
 }

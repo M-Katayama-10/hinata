@@ -1,20 +1,23 @@
-<%= render "shared/header" %>
-<div class="">
-  <h2 class="">
-    <%= "#{@user.name}さんの情報"%>
-  </h2>
-  <div class="">
-    <%= "ユーザー名：" %>
-    <%= @user.name %>
-  </div>
-    <div class="">
-    <%= "推しメン：" %>
-    <%= @user.member %>
-  </div>
-  <div class="">
-    <%= "おひさま歴：" %>
-    <%= @user.history %>
-  </div>
+<div class="show_user_main">
+  <%= render "shared/header" %>
+    <div class ="show_content">
+      <div class ="shows">
+        <h2 class="user_show_name">
+          <%= "#{@user.name}さんの情報"%>
+        </h2>
+        <div class="user_show">
+          <%= "ユーザー名：" %>
+          <%= @user.name %>
+        </div>
+          <div class="user_show">
+          <%= "推しメン：" %>
+          <%= @user.member %>
+        </div>
+        <div class="user_show">
+          <%= "おひさま歴：" %>
+          <%= @user.history %>
+        </div>
+      </div>
+    </div>
+  <%#= render "shared/footer" %>
 </div>
-
-<%= render "shared/footer" %>

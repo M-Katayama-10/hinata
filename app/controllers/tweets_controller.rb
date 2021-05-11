@@ -45,91 +45,91 @@ class TweetsController < ApplicationController
   end
 
   def ushio
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "2"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "2")).order(days: "ASC")
   end
 
   def kageyama
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "3"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "3")).order(days: "ASC")
   end
 
   def katou
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "4"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "4")).order(days: "ASC")
   end
 
   def saitou
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "5"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "5")).order(days: "ASC")
   end
 
   def kumi
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "6"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "6")).order(days: "ASC")
   end
 
   def mirei
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "7"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "7")).order(days: "ASC")
   end
 
   def takase
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "8"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "8")).order(days: "ASC")
   end
 
   def takamoto
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "9"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "9")).order(days: "ASC")
   end
 
   def higashimura
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "10"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "10")).order(days: "ASC")
   end
 
   def kanemura
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "11"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "11")).order(days: "ASC")
   end
 
   def kawata
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "12"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "12")).order(days: "ASC")
   end
 
   def kosaka
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "13"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "13")).order(days: "ASC")
   end
 
   def tomita
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "14"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "14")).order(days: "ASC")
   end
 
   def nibu
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "15"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "15")).order(days: "ASC")
   end
 
   def hamagishi
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "16"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "16")).order(days: "ASC")
   end
 
   def matsuda
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "17"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "17")).order(days: "ASC")
   end
 
   def miyata
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "18"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "18")).order(days: "ASC")
   end
 
   def watanabe
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "19"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "19")).order(days: "ASC")
   end
 
   def kamimura
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "20"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "20")).order(days: "ASC")
   end
 
   def takahashi
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "21"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "21")).order(days: "ASC")
   end
 
   def morimoto
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "22"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "22")).order(days: "ASC")
   end
 
   def yamaguchi
-    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "23"))
+    @tweets = Tweet.where(member_id: "1").or(Tweet.where(member_id: "23")).order(days: "ASC")
   end
 
 

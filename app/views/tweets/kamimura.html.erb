@@ -1,74 +1,78 @@
-<%= render "shared/header" %>
-<div class ="profile">
-  <div class="member_image">
-    <img src="https://cdn.hinatazaka46.com/images/14/cf8/a6b6ee6cf204f3258a046340a262b/400_320_102400.jpg" >
+<div class ="member_detail">
+  <%= render "shared/header" %>
+  <div class ="profile">
+    <div class="member_image">
+      <img src="https://cdn.hinatazaka46.com/images/14/cf8/a6b6ee6cf204f3258a046340a262b/400_320_102400.jpg" >
+    </div>
+    <div class ="member_name">
+      <div class="kanji">
+        上村 ひなの
+      </div>
+      <div class="hiragana">
+        かみむら ひなの
+      </div>
+      <div class="generation">
+        三期生
+      </div>
+      <div class="age">
+        17歳
+      </div>
+      <div class="birthday">
+        2004年4月12日
+      </div>
+      <div class="prefucture">
+        東京都
+      </div>
+    </div>
   </div>
-  <div class ="member_name">
-    <div class="kanji">
-      上村 ひなの
+
+
+  <% @tweets.each do |tweet| %>
+    <div class ="one_tweet_second">
+      <div class = "days">
+          <%= link_to tweet.days, tweet_path(tweet.id) %>
+          <% case tweet.dayofweek_id %>
+            <% when 1 then %>
+              <div class = "week">月曜日</div>
+            <% when 2 then %>
+              <div class = "week">火曜日</div>
+            <% when 3 then %>
+              <div class = "week">水曜日</div>
+            <% when 4 then %>
+              <div class = "week">木曜日</div>
+            <% when 5 then %>
+              <div class = "week">金曜日</div>
+            <% when 6 then %>
+              <div class = "week">土曜日</div>
+            <% when 7 then %>
+              <div class = "week">日曜日</div>
+          <% end %>
+      </div>
+
+      <div class="index_tweet">
+        <div class='tweet_text'>
+          <%= "出演：" %>
+          <%= tweet.member.name %>
+        </div>
+
+        <div class='tweet_text'>
+        <% if tweet.time.present? %>
+          <%= tweet.time %>〜<%= tweet.endtime %>
+        <% end %>
+        </div>
+
+        <div class='tweet_text'>
+          <%= tweet.program %>
+        </div>
+
+        <div class='tweet_text'>
+          <%= tweet.supplement %>
+        </div>
+
+      </div>
     </div>
-    <div class="hiragana">
-      かみむら ひなの
-    </div>
-    <div class="generation">
-      三期生
-    </div>
-    <div class="age">
-      17歳
-    </div>
-    <div class="birthday">
-      2004年4月12日
-    </div>
-    <div class="prefucture">
-      東京都
-    </div>
-  </div>
+  <% end %>
+
+
+  <%#= render "shared/footer" %>
 </div>
-
-
-<% @tweets.each do |tweet| %>
-  <div class = "days">
-      <%= link_to tweet.days, tweet_path(tweet.id) %>
-      <% case tweet.dayofweek_id %>
-        <% when 1 then %>
-          <div class = "week">月曜日</div>
-        <% when 2 then %>
-          <div class = "week">火曜日</div>
-        <% when 3 then %>
-          <div class = "week">水曜日</div>
-        <% when 4 then %>
-          <div class = "week">木曜日</div>
-        <% when 5 then %>
-          <div class = "week">金曜日</div>
-        <% when 6 then %>
-          <div class = "week">土曜日</div>
-        <% when 7 then %>
-          <div class = "week">日曜日</div>
-      <% end %>
-  </div>
-
-  <div class="index_tweet">
-    <div class='tweet_text'>
-      <%= "出演：" %>
-      <%= tweet.member.name %>
-    </div>
-
-    <div class='tweet_text'>
-    <% if tweet.time.present? %>
-      <%= tweet.time %>〜<%= tweet.endtime %>
-    <% end %>
-    </div>
-
-    <div class='tweet_text'>
-      <%= tweet.program %>
-    </div>
-
-    <div class='tweet_text'>
-      <%= tweet.supplement %>
-    </div>
-
-  </div>
-<% end %>
-
-
-<%= render "shared/footer" %>

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
 
   devise_for :users
-  root to: "tweets#index"
+  root to: "groups#index"
   resources :users, only: [:edit, :update, :show]
   resources :members, only: [:index]
   resources :groups, only: [:index]

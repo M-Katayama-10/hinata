@@ -45,6 +45,7 @@
 .third {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 40px;
 }
 
 .third_name {
@@ -76,3 +77,58 @@ a {
   color: black;
 }
 
+.group_all {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
+}
+
+.member_all {
+  background-color:rgba(0,255,255,0.05);
+}
+
+.member_detail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:rgba(0,255,255,0.05);
+}
+
+.group_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group_left {
+  width: 1120px;
+}
+
+.group_right {
+  width: calc(100vw - 1120px);
+  height: 1250px;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  overflow: scroll;
+}
+
+.group_image {
+  height: 700px;
+  background: url(https://cdn.hinatazaka46.com/files/14/090A2533_syugo_gosei_3_compressed3.jpg) center top/cover no-repeat;
+}
+
+.group_history {
+  background-color:rgba(0,255,255,0.05);
+  width: 100vw;
+  height: 550px;
+}
+
+.history_title {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.history_detail {
+  overflow: scroll;
+  height: 450px;
+}

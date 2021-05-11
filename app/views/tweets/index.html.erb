@@ -44,9 +44,6 @@
               <%= tweet.supplement %>
             </div>
 
-            <div class=''>
-              <%= link_to "tweeted by #{tweet.user.name}", user_path(tweet.user.id), method: :get %>
-            </div>
           </div>
         </div>
       <% end %>
@@ -57,5 +54,5 @@
     </div>
 
   </div>
-  <%= render "shared/footer" %>
+  <%#= render "shared/footer" %>
 </div>

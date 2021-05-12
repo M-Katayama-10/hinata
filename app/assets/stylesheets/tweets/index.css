@@ -14,13 +14,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color:rgba(0,255,255,0.05);
+  background-color: rgba(0,255,255,0.05);
 }
 
 .main {
   display: flex;
   justify-content: space-between;
-  background-color:rgba(0,255,255,0.05);
+  background-color:white;
   height: 700px;
 }
 
@@ -57,8 +57,10 @@
   display: flex;
   justify-content: center;
   padding-top: 65px;
-  min-height: 100vh;
-  background-color:rgba(0,255,255,0.05);
+  height: calc(100vh - 120px);
+  background-color: rgba(0,255,255,0.05);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .new_days {
@@ -150,6 +152,16 @@
 .edit_form {
   display: flex;
   justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.user_edit_form {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 100px;
 }
 
 
@@ -161,7 +173,37 @@
   border-top: solid 5px #FFCC99;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   width: 1150px;
-  
+}
+
+.regular {
+  display: flex;
+  justify-content: left;
+}
+
+.regular_image {
+  width: 190px;
+  height: 190px;
+  margin-top: 42px;
+  background-image: url(file:///Users/katayamamamoru/projects/hinata/app/assets/images/fa7e3114044c3985db01403d09be72a8.png);
+}
+
+.regular_content {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background:rgba(255,51,102,0.1);
+  border-top: solid 5px #FF3300;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  width: 900px;
+  margin-left: 60px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.regular_title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 
 .edit_user_main {
@@ -214,11 +256,13 @@
 }
 
 .user_show {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  font-weight: bold;
 }
 
 .user_show_name {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .search_all {

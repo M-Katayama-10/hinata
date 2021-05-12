@@ -88,16 +88,24 @@
 .edit_btn {
   margin-left: 20px;
   margin-top: 30px;
+  border: solid 1px ;
+  padding: 8px;
+  background-color:rgba(255,204,204,0.2);
+  border-radius: 5px;
 }
 
 .destroy_btn {
   margin-left: 40px;
   margin-top: 30px;
+  border: solid 1px ;
+  padding: 8px;
+  background-color: rgba(255,204,204,0.2);
+  border-radius: 5px;
 }
 
 .edit_destroy {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .edit_days {
@@ -130,6 +138,13 @@
 
 .edit_back {
   margin-top: 35px;
+  border: solid 1px ;
+  padding: 3px;
+  border-radius: 5px;
+  width: 130px;
+  background-color: rgba(204,204,204,0.25);
+  font-size: 14px;
+  text-align: center;
 }
 
 .edit_form {

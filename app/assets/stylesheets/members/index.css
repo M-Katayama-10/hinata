@@ -113,7 +113,7 @@ a {
 }
 
 .group_image {
-  height: 700px;
+  height: 720px;
   background: url(https://cdn.hinatazaka46.com/files/14/090A2533_syugo_gosei_3_compressed3.jpg) center top/cover no-repeat;
 }
 
@@ -121,19 +121,66 @@ a {
   background-color:rgba(0,255,255,0.05);
   width: 100vw;
   height: 550px;
+  
 }
 
 .history_title {
   margin-top: 0px;
-  padding-top: 20px;
+  padding-top: 5px;
+  font-family: 'Helvetica Neue';
+  padding-left: 10px;
+  padding-bottom: 5px;
+  background-color : rgba(0,255,255,0.4);
+  background-image :
+      repeating-linear-gradient(45deg,
+                                rgba(153, 204, 255, 0.50),
+                                rgba(153, 204, 255, 0.50) 39px,
+                                rgba(0, 0, 0, 0) 0,
+                                rgba(0, 0, 0, 0) 78px),
+      repeating-linear-gradient(315deg,
+                                rgba(77, 166, 255, 0.50),
+                                rgba(77, 166, 255, 0.50) 39px,
+                                rgba(0, 0, 0, 0) 0,
+                                rgba(0, 0, 0, 0) 78px);
+  text-shadow    : 
+  2px  2px 1px #ffffff,
+  -2px  2px 1px #ffffff,
+  2px -2px 1px #ffffff,
+  -2px -2px 1px #ffffff,
+  2px  0px 1px #ffffff,
+  0px  2px 1px #ffffff,
+  -2px  0px 1px #ffffff,
+  0px -2px 1px #ffffff; 
 }
 
 .history_detail {
   overflow: scroll;
   height: 450px;
+  margin-left: 10px;
 }
 
 .profile_under {
-  height: calc(100vh - 485px);
+  height: calc(100vh - 300px);
   overflow: scroll;
+}
+
+.group_title {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Arial Rounded MT Bold';
+  color: #EEEEEE;
+  text-shadow    : 
+       2px  2px 1px #99ccff,
+      -2px  2px 1px #99ccff,
+       2px -2px 1px #99ccff,
+      -2px -2px 1px #99ccff,
+       2px  0px 1px #99ccff,
+       0px  2px 1px #99ccff,
+      -2px  0px 1px #99ccff,
+       0px -2px 1px #99ccff;
+  
 }

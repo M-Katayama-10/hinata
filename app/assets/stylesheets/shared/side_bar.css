@@ -1,7 +1,13 @@
 
 .name {
   font-size: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
+}
+
+.name_list {
+  font-size: 18px;
+  padding-bottom: 3px;
+  font-weight: bold;
 }
 
 .side_bar_all {

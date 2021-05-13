@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: hinata_production
-  username: hinata
-  password: <%= ENV['HINATA_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

@@ -141,10 +141,10 @@
 .edit_back {
   margin-top: 35px;
   border: solid 1px ;
-  padding: 3px;
+  padding: 2px;
   border-radius: 5px;
-  width: 130px;
-  background-color: rgba(204,204,204,0.25);
+  width: 60px;
+  background-color: rgba(192,192,192,0.2);
   font-size: 14px;
   text-align: center;
 }
@@ -337,3 +337,4 @@
   color: red;
   margin-bottom: 10px;
 }
+

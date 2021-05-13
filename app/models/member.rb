@@ -23,10 +23,9 @@ class Member < ActiveHash::Base
     { id: 20, name: '上村ひなの' },
     { id: 21, name: '高橋未来虹' },
     { id: 22, name: '森本茉莉' },
-    { id: 23, name: '山口陽世' },
+    { id: 23, name: '山口陽世' }
   ]
 
   include ActiveHash::Associations
   has_many :tweets
-
 end

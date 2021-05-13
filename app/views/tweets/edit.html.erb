@@ -39,6 +39,7 @@
       <div class ="edit_back">
         <%= link_to '詳細ページにもどる', tweet_path(@tweet.id), class:"" %>
       </div>
+      <%= render 'shared/error_messages', model: f.object %>
     <% end %>
   </div>
 

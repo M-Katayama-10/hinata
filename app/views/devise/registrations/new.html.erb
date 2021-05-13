@@ -39,6 +39,7 @@
         <div class="registration_new_content">
           <%= f.submit "新規登録", class: :form__btn  %>
         </div>
+        <%= render 'shared/error_messages', model: f.object %>
       <% end %>
     </div>
   </div>

@@ -1,5 +1,4 @@
 class Tweet < ApplicationRecord
-
   with_options presence: true do
     validates :days
     validates :program
@@ -8,7 +7,7 @@ class Tweet < ApplicationRecord
   belongs_to :user
 
   def self.search(search)
-    if search != ""
+    if search != ''
       Tweet.where('program LIKE(?)', "%#{search}%")
     else
       Tweet.all
@@ -22,5 +21,4 @@ class Tweet < ApplicationRecord
   end
 
   belongs_to :member
-
 end

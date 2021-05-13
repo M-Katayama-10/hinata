@@ -313,7 +313,7 @@
 }
 
 .registration_new_content {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .session_new {
@@ -324,4 +324,16 @@
 
 .session_content {
   margin-bottom: 40px;
+}
+
+.error-message {
+  list-style: none;
+  font-size: 13px;
+  color: red;
+  margin-top: 10px;
+}
+
+.login-flash-message {
+  color: red;
+  margin-bottom: 10px;
 }

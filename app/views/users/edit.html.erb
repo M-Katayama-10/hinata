@@ -38,6 +38,7 @@
           <div class='edit_content'>
             <%= f.submit "更新する", class: ''%>
           </div>
+          <%= render 'shared/error_messages', model: f.object %>
         <% end %>
       </div>
     </div>

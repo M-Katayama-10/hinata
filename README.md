@@ -164,7 +164,7 @@ http://18.181.58.188/
 <br>
 
 ## ソース管理
-・GitHub
+・GitHub  
 ・GitHubDesktop
 <br>
 <br>

@@ -1,6 +1,6 @@
 # 🌞HINATAZAKA46 APPEARANCE INFORMATION
 ### 芸能人やアイドルなど（誰でも）の各媒体への出演情報を管理するアプリケーション
-トップページの画像貼る
+[![Image from Gyazo](https://i.gyazo.com/7a97b51f90f61ee7782d93f095c83c66.jpg)](https://gyazo.com/7a97b51f90f61ee7782d93f095c83c66)
 
 <br>
 <br>
@@ -46,7 +46,7 @@ http://18.181.58.188/
 | 投稿機能　　　　　　　　 | 出演情報の投稿　　　　　　　　　　　　　　　　　　　　　　　　　　　　 |  
 | 投稿詳細表示機能　　　　 | 各投稿詳細を詳細ページで閲覧　　　　　　　　　　　　　　　　　　　　　 |  
 | 投稿編集・削除機能　　　 | 編集はログインユーザー、削除は投稿者のみ可能　　　　　　　　　　　　　 |  
-| 検索機能　　　　　　　　 | 検索フォームか番組名の検索が可能　　　　　　　　　　　　　　　　　　　 |  
+| 検索機能　　　　　　　　 | 検索フォームから番組名の検索が可能　　　　　　　　　　　　　　　　　　 |  
 
 <br>
 <br>
@@ -58,43 +58,40 @@ http://18.181.58.188/
 ## 🔵ログインしていないユーザーでも出来る機能
 
 ### 🔶ログインしていないユーザーはヘッダーに"新規登録"と"ログイン"ボタンがある
-画像
+[![Image from Gyazo](https://i.gyazo.com/913b7b8d5bd7a45e0f24afaa70815df5.jpg)](https://gyazo.com/913b7b8d5bd7a45e0f24afaa70815df5)
 
 ### 🔶"新規登録"を押すと新規登録ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/2b205c304faf59b4e8cbffc93392db78.gif)](https://gyazo.com/2b205c304faf59b4e8cbffc93392db78)
 
 ### 🔶新規登録フォームを入力後実行するとトップページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/6feef810c2c13d36a0728523bc291e9c.gif)](https://gyazo.com/6feef810c2c13d36a0728523bc291e9c)
 
 ### 🔶"メンバー"をクリックするとメンバー一覧ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/c155b53ec296c09d81789326045320ce.gif)](https://gyazo.com/c155b53ec296c09d81789326045320ce)
 
 ### 🔶"日向坂46"をクリックするとトップページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/2608a7fa269f4fa90b1a6778fc0660e1.gif)](https://gyazo.com/2608a7fa269f4fa90b1a6778fc0660e1)
 
 ### 🔶"APPEARANCE INFORMATION"をクリックすると投稿一覧ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/6ac98688d1f2cc084a8cc36e5fcf0f20.gif)](https://gyazo.com/6ac98688d1f2cc084a8cc36e5fcf0f20)
 
 ### 🔶メンバー一覧ページの画像をクリックすると各メンバー詳細ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/9e12ce185f401e449211bab98ef65142.gif)](https://gyazo.com/9e12ce185f401e449211bab98ef65142)
 
 ### 🔶投稿一覧ページのサイドバーの名前をクリックすると各メンバー詳細ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/3ec184d520e906936dc08e684bad1fc5.gif)](https://gyazo.com/3ec184d520e906936dc08e684bad1fc5)
 
 ### 🔶各メンバー詳細ページでは、そのメンバーの出演する番組だけが表示される(日向坂46とそのメンバー)
-画像
+[![Image from Gyazo](https://i.gyazo.com/cbf6997abe4b16e586f4c14ce571736d.gif)](https://gyazo.com/cbf6997abe4b16e586f4c14ce571736d)
 
 ### 🔶投稿一覧ページでは各投稿を日付と時間が新しい順に閲覧できる
-画像
+[![Image from Gyazo](https://i.gyazo.com/70cfef71f8883d0e895af1173c80e696.png)](https://gyazo.com/70cfef71f8883d0e895af1173c80e696)
 
 ### 🔶各投稿の日付をクリックすると投稿詳細ページに遷移する
-動画
-
-### 🔶投稿詳細ページには投稿者名が表示される
-画像
+[![Image from Gyazo](https://i.gyazo.com/29293e1314a2e26bac498e1716ca3dce.gif)](https://gyazo.com/29293e1314a2e26bac498e1716ca3dce)
 
 ### 🔶投稿者名をクリックすると投稿者詳細ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/a9ab1e964d9f7e5c2ca211bcb36dc511.gif)](https://gyazo.com/a9ab1e964d9f7e5c2ca211bcb36dc511)
 
 <br>
 <br>
@@ -103,37 +100,37 @@ http://18.181.58.188/
 ## 🔵ログイン済みのユーザーしか出来ない機能
 
 ### 🔶ログインフォームを入力し、実行するとトップページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/44db0e41659da495de67a20162092e9a.gif)](https://gyazo.com/44db0e41659da495de67a20162092e9a)
 
 ### 🔶ログイン後ヘッダーに"ユーザー名"と"ログアウト"と"投稿する"が現れる
-画像
+[![Image from Gyazo](https://i.gyazo.com/3a1e0514d46adf7129589f3d160a7cf6.jpg)](https://gyazo.com/3a1e0514d46adf7129589f3d160a7cf6)
 
 ### 🔶ヘッダーの"ユーザー名"をクリックするとユーザー編集ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/dfe2a804cb743193efecba213d82ec9c.gif)](https://gyazo.com/dfe2a804cb743193efecba213d82ec9c)
 
 ### 🔶ヘッダーの"ログアウト"をクリックでログアウトし、トップページに遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/8c51187ba153677ca1360357662ed7b6.gif)](https://gyazo.com/8c51187ba153677ca1360357662ed7b6)
 
 ### 🔶"投稿する"をクリックすると投稿ページに遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/8a94b401dc443c40a36dc12df3009610.gif)](https://gyazo.com/8a94b401dc443c40a36dc12df3009610)
 
 ### 🔶投稿ページで必要事項を入力し、実行すると投稿一覧ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/9e2004c51a630fa825e1e53a4bf38b3f.gif)](https://gyazo.com/9e2004c51a630fa825e1e53a4bf38b3f)
 
 ### 🔶投稿詳細ページには"編集"ボタンがある
-画像
+[![Image from Gyazo](https://i.gyazo.com/28d8f41627a052bfdd5d0339efabbc15.png)](https://gyazo.com/28d8f41627a052bfdd5d0339efabbc15)
 
 ### 🔶投稿詳細ページで投稿者にのみ"削除"ボタンが現れる
-画像
+[![Image from Gyazo](https://i.gyazo.com/dbe928988562ac555e542f5d5bf9086a.png)](https://gyazo.com/dbe928988562ac555e542f5d5bf9086a)
 
 ### 🔶"編集"をクリックすると投稿編集ページへ遷移する
-動画
+[![Image from Gyazo](https://i.gyazo.com/91a9a40067d691f480c763e9dc2cd3c3.gif)](https://gyazo.com/91a9a40067d691f480c763e9dc2cd3c3)
 
-### 🔶変更事項を入力し、実行すると投稿一覧ページへ遷移する
-動画
+### 🔶変更事項を入力し、実行すると投稿詳細ページへ遷移する
+[![Image from Gyazo](https://i.gyazo.com/1d96482c18af9814f59bafb3d912c547.gif)](https://gyazo.com/1d96482c18af9814f59bafb3d912c547)
 
-### 🔶削除をクリックすると、投稿一覧ページへ遷移する
-動画
+### 🔶削除をクリックすると、投稿が削除され、投稿一覧ページへ遷移する
+[![Image from Gyazo](https://i.gyazo.com/b24e8948a0fb731426b660f79c9a6a72.gif)](https://gyazo.com/b24e8948a0fb731426b660f79c9a6a72)
 
 <br>
 <br>
